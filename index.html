@@ -280,23 +280,21 @@
                 <label class="modal__guests-label" for="adults-count">Взрослые:</label>
                 <div class="modal__counter">
                   <button class="modal__counter-button modal__counter-button--decrease" type="button" aria-label="Уменьшить количество взрослых">−</button>
-                  <input class="modal__counter-value" id="adults-count" type="number" name="adults" value="2" readonly />
+                  <input class="modal__counter-value" id="adults-count" type="number" name="adults" value="2" />
                   <button class="modal__counter-button modal__counter-button--increase" type="button" aria-label="Увеличить количество взрослых">+</button>
                 </div>
               </div>
-              <div class="modal__guests-group">
-                <label class="modal__guests-label" for="children-count">
-                  Дети:
-                  <button class="modal__tooltip-button" type="button" aria-describedby="children-tooltip">
-                    <span class="visually-hidden">Информация</span>
-                  </button>
-                  <span class="modal__tooltip" role="tooltip" id="children-tooltip">
-                    Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
-                  </span>
-                </label>
+              <div class="modal__guests-group modal__guests-group--tooltip">
+                <label class="modal__guests-label" for="children-count">Дети:</label>
+                <button class="modal__tooltip-button" type="button" aria-describedby="children-tooltip">
+                  <span class="visually-hidden">Информация</span>
+                </button>
+                <span class="modal__tooltip" role="tooltip" id="children-tooltip">
+                  Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                </span>
                 <div class="modal__counter">
                   <button class="modal__counter-button modal__counter-button--decrease" type="button" aria-label="Уменьшить количество детей">−</button>
-                  <input class="modal__counter-value" id="children-count" type="number" name="children" value="2" readonly />
+                  <input class="modal__counter-value" id="children-count" type="number" name="children" value="2" />
                   <button class="modal__counter-button modal__counter-button--increase" type="button" aria-label="Увеличить количество детей">+</button>
                 </div>
               </div>
